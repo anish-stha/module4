@@ -4,8 +4,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 
-import java.io.File;
-import java.net.URL;
 import java.util.Properties;
 
 
@@ -24,8 +22,8 @@ public class HibernateUtil {
             properties.setProperty(Environment.HBM2DDL_AUTO,"update");
             properties.setProperty(Environment.DRIVER, "com.mysql.jdbc.Driver");
             properties.setProperty(Environment.USER, "root");
-            properties.setProperty(Environment.PASS, "root");
-            properties.setProperty(Environment.URL, "jdbc:mysql://localhost:3306/db?characterEncoding=latin1&useConfigs=maxPerformance");
+            properties.setProperty(Environment.PASS, "");
+            properties.setProperty(Environment.URL, "jdbc:mysql://localhost:3306/db");
             Configuration cfg = new Configuration();
             cfg.setProperties(properties);
             cfg.addAnnotatedClass(UserDao.class);

@@ -3,4 +3,35 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+    <servlet>
+        <servlet-name>UserRegistration</servlet-name>
+        <servlet-class>com.example.demo.UserRegistrationServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UserRetrieval</servlet-name>
+        <servlet-class>com.example.demo.UserRetrievalServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>HiServlet</servlet-name>
+        <servlet-class>com.example.demo.HiServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserRegistration</servlet-name>
+        <url-pattern>/user_registration</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserRetrieval</servlet-name>
+        <url-pattern>/user_retrieval</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HiServlet</servlet-name>
+        <url-pattern>/hi-servlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>

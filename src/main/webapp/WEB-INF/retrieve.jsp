@@ -14,7 +14,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LSU_Athletics_logo.svg/1280px-LSU_Athletics_logo.svg.png"
      width="200" alt="LSU Logo">
 
-<form action="http://localhost:8080/user_registration" method="post" enctype="multipart/form-data">
+<form action="/module4/user_retrieval" method="post" enctype="multipart/form-data">
     <label>Name: <input name="name" ></label>
     <br>
     <!--  <button type="submit">Sign Up</button> -->
